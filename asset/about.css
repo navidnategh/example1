@@ -1,0 +1,19 @@
+body{
+  background-color: #c2eeff ;
+  font-family: arial ;
+  text-align: center;
+  font-size: revert ;
+  font-style: normal;
+
+  background-image: url(about.webp);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+
+a, a:hover,a:visited {
+  color: blueviolet ;
+  text-decoration: none;
+
+
+}

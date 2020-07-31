@@ -1,0 +1,21 @@
+body{
+  background-color: #dbdba0 ;
+  background-image: url(home.jpg);
+  text-align:  center ;
+  background-attachment: fixed;
+  background-repeat: no-repeat ;
+  font-style: oblique;
+  color: #847df5 ;
+
+}
+
+body *{
+  font-family: arial;
+  font-size: large;
+
+}
+a,a:hover , a :visited {
+  text-decoration: none;
+  color: black;
+
+}
