@@ -1,25 +1,28 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>HOME</title>
+    <link rel="stylesheet" href="{% static 'home.css' %} ">
+
+
   </head>
   <body>
     <div class="blog home">
-
-
       <h2>Home blog</h2>
-
-
       <p>hello my name is navid and this is a example project for upload to git hub , source top learn </p>
-
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
     </div>
     <div class="link">
-    <p>home/ , about/ , '' , 'articles/' , 'admin/ admin adminnavid' , </p>
 
+
+    <p>home/ , about/ , '' , 'articles/' , 'admin/ admin adminnavid' , </p>
+    <a href="/about">about</a>
+    <p></p>
+    <a href="/articles/">articles</a>
+    <p></p>
+    <a href="/admin/">admin</a>
     </div>
   </body>
 </html>
