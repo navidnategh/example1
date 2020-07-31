@@ -1,15 +1,9 @@
-{% load static %}
+{% extends 'base.html' %}
+{%block title %}
+articles
+{%endblock%}
 
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>articles_list</title>
-
-    <link rel="stylesheet" href="{% static 'styles.css' %} ">
-
-  </head>
-  <body>
+{%block content %}
     <h1>articles list</h1>
     <div class="articles_list">
       <p>this is article from article app </p>
@@ -26,5 +20,4 @@
 
     <a href="/home/"><h1>home</h1></a>
 
-  </body>
-</html>
+{%endblock%}
