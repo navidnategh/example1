@@ -7,11 +7,12 @@
 <h2>signup</h2>
 <p></p>
 
-<form class="site-form" action="index.html" method="post">
-{{form}}
+<form class="site-form" action="/accounts/signup" method="post">
+  {{form}}
+  {% csrf_token %}
+<p></p>
+  <input type="submit"  value="submit">
 
 </form>
-
-<input type="submit"  value="submit">
 
 {% endblock %}
