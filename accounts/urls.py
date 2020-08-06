@@ -9,6 +9,8 @@ urlpatterns =[
 
     path ('' , views.signup_view , name = 'accounts') ,
 
+    path ('login' , views.login_view , name = 'login' ) ,
+
 
 
 ]

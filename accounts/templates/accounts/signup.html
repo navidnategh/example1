@@ -7,11 +7,11 @@
 <h2>signup</h2>
 <p></p>
 
-<form class="site-form" action="/accounts/signup" method="post">
+<form class="site-form" action="{% url 'accounts:signup' %}" method="post">
   {{form}}
   {% csrf_token %}
 <p></p>
-  <input type="submit"  value="submit">
+  <input type="submit"  value="SignUp">
 
 </form>
 
