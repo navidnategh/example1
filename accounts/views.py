@@ -14,7 +14,15 @@ def signup_view(request) :
             login(request,user)
 
             #login
-            return redirect('articles:list')
+
+        
+            if  'next' in request.POST  :
+                return redirect(request.POST.get('next'))
+
+            else :
+                return redirect('articles:list')
+
+
     else:
         form = UserCreationForm ()
 
