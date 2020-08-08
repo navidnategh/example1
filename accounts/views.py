@@ -15,19 +15,14 @@ def signup_view(request) :
 
             #login
 
-        
             if  'next' in request.POST  :
                 return redirect(request.POST.get('next'))
 
             else :
                 return redirect('articles:list')
-
-
     else:
         form = UserCreationForm ()
-
     return render (request, 'accounts/signup.html', {'form' : form })
-
 
 def login_view(request):
     if request.method == 'POST' :
@@ -43,7 +38,6 @@ def login_view(request):
         form = AuthenticationForm()
 
     return render(request , 'accounts/login.html' , { 'form' : form } )
-
 
 def logout_view(request) :
     if request.method   == 'POST' :

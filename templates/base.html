@@ -9,34 +9,41 @@
 
     {%endblock%}
     </title>
-
     <link rel="stylesheet" href="{% static 'styles.css' %} ">
-
   </head>
   <body>
     <a href="{% url 'articles:list' %}"><h3>LOGO</h3></a>
 
     <nav>
       <ul>
+        {% if user.is_authenticated %}
         <li>
-          
           <form class="logout" action="{% url 'accounts:logout' %}" method="post">
             {% csrf_token %}
-            <button type="submit">LogOut</button>
+          <button type="submit">LogOut</button>
 
           </form>
         </li>
+        <p></p>
+        <li>
+          <a href="{% url 'articles:creat' %}">Creat New Article</a>
+        </li>
+        {% else %}
+        <li>
+          <a href="{% url 'accounts:login' %}">LogIn</a>
+          </li>
+          <p></p>
+          <li>
+          <a href="{% url 'accounts:signup' %}">SignUp </a>
+        </li>
+        {% endif %}
       </ul>
     </nav>
 
-
     <div class="wrapper">
-
       {% block content %}
 
       {%endblock%}
-
     </div>
-
-      </body>
-    </html>
+ </body>
+</html>
